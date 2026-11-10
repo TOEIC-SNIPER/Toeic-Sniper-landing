@@ -127,6 +127,9 @@ body.modal-open{overflow:hidden}
 .app-go{margin-top:auto;font-size:15px;font-weight:600;color:#8EC5FF;letter-spacing:.02em}
 .app-arrow{display:inline-block;transition:transform .3s ease}
 .app-card:hover .app-arrow{transform:translateX(6px)}
+.card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+@media (max-width:1179px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:639px){.card-grid{grid-template-columns:minmax(0,1fr)}}
 .demo-box{position:relative}
 .demo-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border:0;padding:0;margin:0;background:rgba(0,0,0,.18);cursor:pointer;transition:background .3s}
 .demo-play:hover{background:rgba(0,0,0,.05)}
@@ -224,11 +227,11 @@ body.modal-open{overflow:hidden}
 </section>
 
 <section style="position: relative; padding: 0 24px 140px; background: #05070D">
-<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 18px">
+<div class="card-grid" style="max-width: 1240px; margin: 0 auto">
 <div class="glass ring rv" style="flex: 1 1 250px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #A3ADBF">시작 비용</span><span class="sh" style="font-size: 64px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; font-variant-numeric: tabular-nums">0원</span><span style="font-size: 15px; color: #A3ADBF">수강생이 생기기 전까지</span></div>
 <div class="glass ring ring-2 rv" style="flex: 1 1 250px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #A3ADBF">수강생 데이터 서버</span><span class="sh" style="font-size: 64px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; font-variant-numeric: tabular-nums">0대</span><span style="font-size: 15px; color: #A3ADBF">모아두는 데이터가 없습니다</span></div>
 <div class="glass ring ring-3 rv" style="flex: 1 1 250px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #A3ADBF">트레이닝과 AS</span><span class="sh" style="font-size: 64px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05">무료</span><span style="font-size: 15px; color: #A3ADBF">강사님이 바뀌어도 다시</span></div>
-<div class="glass ring rv" style="flex: 1 1 250px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #A3ADBF">수강생이 내는 비용</span><span class="sh" style="font-size: 64px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05">하나</span><span style="font-size: 15px; color: #A3ADBF">수강료 외 앱 결제 없음</span></div>
+<div class="glass ring rv" style="flex: 1 1 250px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #A3ADBF">수강생이 내는 비용</span><span class="sh" style="font-size: 64px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05">올인원</span><span style="font-size: 15px; color: #A3ADBF">수강료 외 앱 결제 없음</span></div>
 </div>
 </section>
 
@@ -362,7 +365,7 @@ body.modal-open{overflow:hidden}
 <h2 class="rv sh" style="margin: 0; max-width: 1000px; font-size: clamp(40px, 5.6vw, 80px); line-height: 1.1; letter-spacing: -0.04em; font-weight: 780">새로운 투자 없이,<br>새로운 매출.</h2>
 <p class="rv" style="margin: 0; max-width: 680px; font-size: 19px; line-height: 1.75; color: #C7CFDC">지금 있는 수강생, 강의실, 강사로 특강 하나를 더하는 구조입니다.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 18px">
+<div class="card-grid">
 <div class="glass rv" style="flex: 1 1 260px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">첫 수강생은 지금의 수강생</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">따로 모집하지 않아도 특강을 열 수 있습니다.</p></div>
 <div class="glass rv" style="flex: 1 1 260px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">추가 투자 없음</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">교재나 앱 개발, 서버 구축이 필요 없고, 시작 단계에서는 사용료도 받지 않습니다.</p></div>
 <div class="glass rv" style="flex: 1 1 260px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">정규 수업과 겹치지 않게</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">주말이나 시험 직전 한 달처럼 정규 수업이 없는 시간에 운영합니다.</p></div>
