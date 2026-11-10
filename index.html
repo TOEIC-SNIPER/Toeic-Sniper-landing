@@ -130,6 +130,10 @@ body.modal-open{overflow:hidden}
 .card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
 @media (max-width:1179px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:639px){.card-grid{grid-template-columns:minmax(0,1fr)}}
+.trust-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:999px){.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:639px){.trust-grid{grid-template-columns:minmax(0,1fr)}}
+#demo{scroll-margin-top:110px}
 .demo-box{position:relative}
 .demo-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border:0;padding:0;margin:0;background:rgba(0,0,0,.18);cursor:pointer;transition:background .3s}
 .demo-play:hover{background:rgba(0,0,0,.05)}
@@ -213,7 +217,7 @@ body.modal-open{overflow:hidden}
 <p style="margin: 0; max-width: 760px; font-size: clamp(20px, 2.2vw, 28px); line-height: 1.5; font-weight: 500; color: #D7DEEA">지금의 수강생, 지금의 강의실에<br>토익 특강 하나를 더합니다.</p>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; padding-top: 10px">
 <button type="button" data-open-form class="btn-lux" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 32px; border: 0; border-radius: 999px; font-family: inherit; font-size: 17px; font-weight: 650; cursor: pointer">시연 문의하기</button>
-<a href="#demo" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; font-size: 17px; font-weight: 600; text-decoration: none"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg>10분 시연 영상 보기</a>
+<a href="#demo" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; font-size: 17px; font-weight: 600; text-decoration: none"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg>솔루션 영상 보기</a>
 </div>
 </div>
 </section>
@@ -465,13 +469,13 @@ body.modal-open{overflow:hidden}
 <p class="rv" style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.08em; color: #8EC5FF">신뢰</p>
 <h2 class="rv sh" style="margin: 0; font-size: clamp(40px, 5.6vw, 80px); line-height: 1.1; letter-spacing: -0.04em; font-weight: 780">모아두지 않으니,<br>새어 나갈 것도 없습니다.</h2>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 18px">
+<div class="trust-grid">
 <div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">수강생 데이터를 저장하는 서버가 없습니다</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">모아두는 데이터가 없으니 유출될 데이터도 없습니다. 이메일이나 결제 정보도 받지 않습니다.</p></div>
 <div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">수강생 정보는 학원이 관리합니다</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">수강료 수납, 환불, 명단 관리는 모두 학원에서 하며, 저희는 수강생 정보를 보관하지 않습니다.</p></div>
 <div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">학습 기록은 본인 노트북에만</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">다른 수강생의 기록은 볼 수 없습니다.</p></div>
 <div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">수업 시간에만 열립니다</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">접속 비밀번호는 수업마다 바뀝니다.</p><p style="margin: 0; font-size: 17px; font-weight: 700; color: #8EC5FF">수강생의 꾸준한 수업 참여 유도</p></div>
-<div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">실전 토익 시험 대비 단기 점수 향상</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">함정 패턴과 킬러 유형, 시험 직전 풀이 전략에 집중해 짧은 기간에 실전 점수를 끌어올리도록 설계했습니다.</p></div>
-<div style="flex: 1 1 340px; min-width: 0"></div>
+<div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">실전 토익 시험 대비 단기 점수 향상</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">함정 패턴과 킬러 유형, 시험 직전 풀이 전략에 집중합니다.</p></div>
+<div class="glass trust" style="flex: 1 1 340px; min-width: 0; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 21px; font-weight: 750">토익 스피킹까지 한 솔루션으로</h3><p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A3ADBF">AI 발음 정밀 분석과 교정으로 토익 스피킹 시험 대비 특강도 함께 엽니다.</p></div>
 </div>
 </div>
 </section>
@@ -564,9 +568,7 @@ body.modal-open{overflow:hidden}
 <p class="rv" style="margin: 0; max-width: 640px; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.7; color: #C7CFDC">도입 조건과 세부 사항은 상담에서 함께 정합니다.</p>
 <div class="rv" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; padding-top: 6px">
 <button type="button" data-open-form class="btn-lux" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 38px; border: 0; border-radius: 999px; font-family: inherit; font-size: 18px; font-weight: 650; cursor: pointer">시연 문의하기</button>
-<a href="#demo" class="btn-ghost" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 32px; border-radius: 999px; font-size: 18px; font-weight: 600; text-decoration: none">시연 영상 보기</a>
 </div>
-<p style="margin: 0; font-size: 16px; color: #A3ADBF">연락처: [전화번호] · [이메일]</p>
 </div>
 </section>
 
